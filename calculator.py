@@ -26,3 +26,18 @@ def operationsValidate(prompt):
     operations = [operationsValidate("Enter the first operator (+, -, *, /): "),
                   operationsValidate("Enter the second operator (+, -, *, /): ")]
 
+# Function to perform addition
+def myAdd(a, b):
+    return a + b
+
+# Function to perform subtraction
+def mySub(a, b):
+    return a - b
+
+# Function to perform multiplication
+def myMul(a, b):
+    return a * b
+
+# Function to perform division
+def myDiv(a, b):
+    return a // b
