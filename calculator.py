@@ -18,3 +18,11 @@ def operationsValidate(prompt):
         else:
             print("Invalid operation. Please enter one of +, -, *, /.")
 
+
+ # Input validation and data retrieval
+    values = [valueValidate("Enter the first integer: "),
+              valueValidate("Enter the second integer: "),
+              valueValidate("Enter the third integer: ")]
+    operations = [operationsValidate("Enter the first operator (+, -, *, /): "),
+                  operationsValidate("Enter the second operator (+, -, *, /): ")]
+
