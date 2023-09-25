@@ -19,6 +19,25 @@ def operationsValidate(prompt):
             print("Invalid operation. Please enter one of +, -, *, /.")
 
 
+# Function to perform addition
+def myAdd(a, b):
+    return a + b
+
+# Function to perform subtraction
+def mySub(a, b):
+    return a - b
+
+# Function to perform multiplication
+def myMul(a, b):
+    return a * b
+
+# Function to perform division
+def myDiv(a, b):
+    return a // b
+
+
+if __name__ == "__main__":
+    
  # Input validation and data retrieval
     values = [valueValidate("Enter the first integer: "),
               valueValidate("Enter the second integer: "),
