@@ -1,3 +1,7 @@
+# Create an empty list to store inputs in
+values = []
+operations = []
+
 # Function to validate integer input
 def valueValidate(prompt):
     while True:
@@ -46,7 +50,9 @@ def myMul(a, b):
 def myDiv(a, b):
     return a // b
 
+#Function to compute BEDMAS for the calculator
 def logic(num_list, op_list):
+    #check for division or multiplication first
     while '/' in op_list or '*' in op_list:
             if '/' in op_list:
                 index = op_list.index('/')
@@ -79,10 +85,10 @@ def logic(num_list, op_list):
 if __name__ == "__main__":
     
  # Input validation and data retrieval
-    values = [valueValidate("Enter the first integer: "),
-              valueValidate("Enter the second integer: "),
-              valueValidate("Enter the third integer: ")]
-    operations = [operationsValidate("Enter the first operator (+, -, *, /): "),
-                  operationsValidate("Enter the second operator (+, -, *, /): ")]
+    values.append(valueValidate("Enter number 1: ")) 
+    operations.append(operationsValidate("Enter operator 1: ")) 
+    values.append(valueValidate("Enter number 2: ")) 
+    operations.append(operationsValidate("Enter operator 2: ")) 
+    values.append(valueValidate("Enter number 3: ")) 
   
     display(values, operations)
