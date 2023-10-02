@@ -28,7 +28,7 @@ def display(number_list, operator_list,):
 
     # Construct a formatted expression string
 
-    print(f'Result: {result}')
+    print(f'{number_list[0]} {operator_list[0]} {number_list[1]} {operator_list[1]} {number_list[2]} = {result}')
 
 # Function to perform addition
 def myAdd(a, b):
