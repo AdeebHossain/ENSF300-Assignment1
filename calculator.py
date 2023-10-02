@@ -46,7 +46,37 @@ def myMul(a, b):
 # Function to perform division
 def myDiv(a, b):
     return a // b
-  
+
+def logic(num_list, op_list):
+    while '/' in op_list or '*' in op_list:
+            if '/' in op_list:
+                index = op_list.index('/')
+                result = myDiv(num_list[index], num_list[index + 1])
+                num_list[index] = result
+                del num_list[index + 1]
+                del op_list[index]
+            elif '*' in op_list:
+                index = op_list.index('*')
+                result = myMul(num_list[index], num_list[index + 1])
+                num_list[index] = result
+                del num_list[index + 1]
+                del op_list[index]
+
+        # Evaluate addition and subtraction
+    while '+' in op_list or '-' in op_list:
+        if '+' in op_list:
+            index = op_list.index('+')
+            result = myAdd(num_list[index], num_list[index + 1])
+            num_list[index] = result
+            del num_list[index + 1]
+            del op_list[index]
+        elif '-' in op_list:
+            index = op_list.index('-')
+            result = mySub(num_list[index], num_list[index + 1])
+            num_list[index] = result
+            del num_list[index + 1]
+            del op_list[index]
+
 if __name__ == "__main__":
     
  # Input validation and data retrieval
