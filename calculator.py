@@ -23,8 +23,7 @@ def display(number_list, operator_list,):
 
     number_list_copy = number_list.copy()
     operator_list_copy = operator_list.copy()
-    #to do BEDMAS properly later on
-    #logic(number_list_copy, operator_list_copy)  # Evaluate the expression first
+    logic(number_list_copy, operator_list_copy)  # Evaluate the expression first
     result = num_list_copy
 
     # Construct a formatted expression string
