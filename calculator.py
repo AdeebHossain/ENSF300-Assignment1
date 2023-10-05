@@ -25,8 +25,8 @@ def operationsValidate(prompt):
 #Function to display the expression and result
 def display(number_list, operator_list,):
 
-    number_list_copy = number_list.copy()
-    operator_list_copy = operator_list.copy()
+    number_list_copy = number_list[:]
+    operator_list_copy = operator_list[:]
     logic(number_list_copy, operator_list_copy)  # Evaluate the expression first
     result = num_list_copy
 
