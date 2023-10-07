@@ -48,7 +48,7 @@ def myMul(a, b):
 
 # Function to perform division
 def myDiv(a, b):
-    return a / b
+    return a // b
 
 #Function to compute BEDMAS for the calculator
 def logic(num_list, op_list):
